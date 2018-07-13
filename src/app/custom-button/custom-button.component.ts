@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } fro
 @Component({
   selector: 'app-framework-vote',
   templateUrl: './custom-button.component.html',
-  styleUrls: ['./custom-button.component.css'],
+  styleUrls: ['./custom-button.component.scss'],
   encapsulation: ViewEncapsulation.Native
 })
 export class CustomButtonComponent implements OnInit {

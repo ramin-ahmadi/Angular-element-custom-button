@@ -1,0 +1,36 @@
+@import "../../styles";
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * Button
+ */
+ button {
+	display: inline-block;
+	background:  $color-brand-blue;
+	line-height: 1;
+	padding: 1rem 2rem;
+	border: 0;
+	border-radius: $border-radius;
+	text-align: center;
+	@include font-styles($font-primary, $font-size-med, $color-white, bold, 1, inherit);
+
+	&:hover, &:focus {
+        outline:none;
+        cursor: pointer;
+	}
+
+	/**
+	 * Disabled button
+	 */
+	&.disabled, &.disabled:focus {
+		background: $color-gray-15;
+		color: $color-gray-50;
+		outline:none;
+	}
+	&.disabled:hover{
+		cursor: not-allowed;
+	}
+}
