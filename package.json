@@ -22,7 +22,6 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
-    "bootstrap": "^4.1.1",
     "concat": "^1.0.3",
     "core-js": "^2.5.4",
     "document-register-element": "^1.7.2",
