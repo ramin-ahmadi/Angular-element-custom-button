@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Custom Angular Element</title>
+
+  </head>
+  <body>
+<div style="margin:0px auto">
+    <custom-button  label="click here"></custom-button>
+  </div>
+    <h1 id="event-catcher" style="text-align: center" > </h1>
+    
+    <script src="custom-button.js"></script>
+
+    <script>
+        const vote = document.querySelector('custom-button');
+        const eventCatcher = document.querySelector('#event-catcher');
+        vote.addEventListener('buttonClick', (event)=> {
+            eventCatcher.innerHTML = "Number of clicks emitted from the custom component :  " + event.detail; 
+        });
+
+
+    </script>
+  </body>
+</html>
